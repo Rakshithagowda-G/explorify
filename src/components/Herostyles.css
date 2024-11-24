@@ -1,0 +1,71 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.about {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-txt {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.hero-txt h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  background-color: #fff;
+  font-family: cursive;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about h1 {
+  padding-top: 4rem !important;
+  font-size: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hero-txt p {
+  display: none;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 0.5rem 0.2rem 0;
+}
+.hero-txt .show {
+  text-decoration: none;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 0.3rem;
+
+  border-radius: 6px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: #222;
+}
+.hero-txt .hide {
+  display: none;
+}
+@media screen and (max-width: 555px) {
+  .hero-txt h1 {
+    padding: 10px 20px;
+  }
+  .hero-txt .show {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 0.6rem;
+
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+}
